@@ -115,7 +115,10 @@ ul {
 
 #grilla {
   display: grid;
-  grid-template-areas: "nav  h2         h2" "nav  productos  publicidad" "nav  servicios  publicidad" "nav  footer     footer";
+  grid-template-areas: "nav  h2         h2"
+ "nav  productos  publicidad"
+ "nav  servicios  publicidad"
+ "nav  footer     footer";
   grid-column-gap: 10px;
   grid-row-gap: 15px;
   grid-template-rows: 2fr 1fr 1fr 1fr;
@@ -256,3 +259,6 @@ h3{
 .box-2 {
   padding: 15px;
   width: 500px; }
+
+.banner{ background-color: #a9794e9d;
+  color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
