@@ -1,0 +1,307 @@
+/*css compilado en sass de mi proyecto*/
+
+
+body {
+    background-image: url("../../../imagenes/Fondo1.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    color: #AF804E;
+    font-weight: bold;
+}
+
+
+.menu li {
+    display:inline;
+}
+.centrado{
+    text-align: center;
+}
+
+
+.textoright{
+    text-align: right;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.mayuscula{
+    text-transform: uppercase;
+}
+.espaciadoPalabra{
+    word-spacing: 30px;
+}
+.fontMulish{
+    font-family: 'Mulish', sans-serif;
+}
+.fontCaveat{
+    font-family: 'Caveat', cursive;
+}
+.titulo1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+}
+.parrafo1 {
+    color: rgb(112, 22, 40);
+}
+.parrafo2 {
+    color: rgb(179, 122, 169);
+}
+.negrita {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+/*
+.historiaBox{
+    background-color: rgb(222, 223, 222);
+    border: solid 1px grey;
+    padding: 5px;
+    font-size: 15px;
+    width: 800px;
+    height: 250px;    
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.historia{
+    color: #AF804E;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    padding-bottom: 15px;
+}
+.historiaTexto{
+    width: 250px;
+    height: 400px;
+    float: right;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 300px 100px);
+    grid-template-rows: 40px 100px;
+}
+*/
+
+
+
+.padre-flex{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    flex-wrap: wrap;    
+    width: 90%;
+
+}
+.flex-item{
+    display: flex;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin: 30px;
+    flex: auto;
+}
+
+.gradiente{
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff0f5+21,ffffff+100&1+21,0+100 */
+background: -moz-linear-gradient(top,  rgba(255,240,245,1) 21%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,240,245,1) 21%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,240,245,1) 21%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0f5', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+.historia {
+    text-transform: uppercase;
+    background-color: rgba(255, 240, 245, 0.733);
+    font-family: 'Mulish', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "nav  h2         h2"
+    "nav  productos  publicidad"
+    "nav  servicios  publicidad"
+    "nav  footer     footer";
+    grid-column-gap:10px ;
+    grid-row-gap: 15px;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 20% auto 15%;
+
+}
+.border{
+    border: 1px solid saddlebrown;
+}
+h2{
+    grid-area: h2;
+}
+footer#grid{
+    background-color: rgba(245, 208, 236, 0.884);
+    grid-area: footer;
+}
+
+section#produtos{
+    grid-area: productos;
+}
+section#servicios{
+    grid-area: servicios;
+}
+nav#grid{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidad;
+}
+
+
+
+.animarEscala{
+    height: 200px;
+    width: 200px;
+    transition: height 1s;
+}
+.animarEscala:hover{
+    height: 400px;
+    width: 400px;
+}
+
+/* Animacion del menu 
+.menuAnimado{
+    background-color: rgba(207, 207, 203, 0);
+    color: #AF804E ;
+    transition: 1s;
+}
+.menuAnimado:hover{
+    background-color: rgba(214, 137, 185, 0.568) ;
+    color: snow;
+}
+*/
+
+a {
+    color: #AF804E;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  a:hover {
+    color: rgb(179, 122, 169);
+    text-decoration: underline;
+  }
+
+  h1{
+      margin-top: 30px;
+      font-weight: bold;
+      font-family:  'Mulish', sans-serif;
+  }
+
+  
+.btn-primary {
+    color: #fff;
+    background-color: #f393c8e0;
+    border-color: #ecb6e1;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #ad5f70;
+    border-color: #ad5f70;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+    color: rgb(255, 255, 255);
+    background-color: #888e94;
+    border-color: #969ba1;
+    box-shadow: 0 0 0 0.2rem rgba(141, 142, 145, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #808386;
+    border-color: #7b7d80;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #888a8d;
+    border-color: #76787a;
+    }
+
+.responsive {
+    margin: 20px;        
+    }
+@media (max-width:576px) {
+    .responsive {
+        margin: 5px;
+    }
+}   
+
+/* algo mas de lo que vimos en clase para el desafio 
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(228, 174, 210, 0.767);
+    padding: 15px;
+
+p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+}
+*/
+
+/*pruebas variables
+$base-font-size: 11px;
+$base-font-family: sans-serif;
+$violeta: #9c4482;
+
+h1{
+    font: $violeta $base-font-family;
+}
+
+h3{
+    background-color: $violeta;
+    font-size: $base-font-size;
+    padding: 2px;
+}
+
+*/
+
+
+$fondo-clarito: rgba(233, 207, 219, 0.767);
+$base-font-family: sans-serif;
+$violeta: #9c4482;
+$espaciado: 25px;
+$semi-espaciado: 10px;
+$ancho: 250px;
+
+
+.formulario{
+    background-color: $fondo-clarito;
+    font: $violeta;
+    margin: $espaciado;
+    padding: $semi-espaciado;
+    text-align: center;
+}
+
+.box-1{
+    padding: $espaciado;
+    width: $ancho;
+}
+
+.box-2{
+    padding: $semi-espaciado+5px;
+    width: $ancho*2;
+}
+
+
